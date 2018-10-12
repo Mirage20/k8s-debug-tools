@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-tools
+  annotations:
+    "sidecar.istio.io/inject": "false"
+spec:
+  containers:
+  - name: debug-tools
+    image: mirage20/k8s-debug-tools
